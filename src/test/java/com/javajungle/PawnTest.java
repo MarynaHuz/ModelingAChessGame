@@ -14,8 +14,7 @@ class PawnTest extends ChessPieceTest {
         pawn.setCoordinates(new Coordinates("a2"));
         Coordinates[] validMoves = pawn.getValidMoves();
         Coordinates expectedDestination = new Coordinates("a3");
-//        assertEquals(expectedDestination, validMoves[0]);
-        assertTrue(isMoveFoundInArray(validMoves, expectedDestination), String.format("Move '%s' not found.", expectedDestination));
+        assertTrue(isMoveFoundInArray(validMoves, expectedDestination),String.format("Move '%s' not found.", expectedDestination));
     }
 
     @Test
