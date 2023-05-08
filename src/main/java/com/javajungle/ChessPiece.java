@@ -5,7 +5,7 @@ import static com.javajungle.Color.WHITE;
 
 enum Color{BLACK,WHITE}
 public abstract class ChessPiece {
-    private Color color;
+    Color color;
     protected Coordinates coordinates;
 
     public ChessPiece(Color color) {

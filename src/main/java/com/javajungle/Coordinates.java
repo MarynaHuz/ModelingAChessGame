@@ -40,6 +40,14 @@ public class Coordinates {
         return new Coordinates(this.x + x, this.y + y);
     }
 
+    public boolean isPermittedMove(Coordinates[] moves){
+        for(int x = 0; x<moves.length;x++){
+            if(moves[x].equals(this)){
+                return true;
+            }
+        }
+        return false;
+    }
     protected static int getXForLine(char horizontal) {
         return horizontal - 97;
     }
